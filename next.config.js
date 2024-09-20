@@ -18,4 +18,5 @@ module.exports = {
     loader: "akamai",
     path: "/",
   },
+  output: 'export'
 };

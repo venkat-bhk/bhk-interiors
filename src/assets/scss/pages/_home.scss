@@ -1,0 +1,669 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+html {
+    scroll-behavior: smooth !important;
+}
+
+$white: #fff !default;
+$gray-l: #f2f2f2 !default;
+$gray-d: #414142 !default;
+$orange: #f15b25 !default;
+$orange-l: #FFDBCE !default;
+
+
+@font-face {
+    font-family: 'Wesker' !important;
+    src: url('../../fonts/wesker-light.otf') format('otf');
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.w-80 {
+    width: 80% !important;
+}
+
+.red {
+    background-color: red;
+}
+
+.gray {
+    background-color: $gray-l !important;
+}
+
+.gray-d {
+    background-color: $gray-d !important;
+}
+
+.white {
+    background-color: $white !important;
+}
+
+.intro-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jus-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.jus-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+//Font 80
+.fs-w-80 {
+    font-size: 4.5vw;
+    line-height: 1;
+}
+
+.fs-h-80 {
+    font-size: 8vh;
+    line-height: 1;
+}
+
+//Font 60
+.fs-w-60 {
+    font-size: 3.375vw;
+    line-height: 1;
+}
+
+.fs-h-60 {
+    font-size: 4.8vh;
+    line-height: 1;
+}
+
+//Font 40
+.fs-w-40 {
+    font-size: 2.25vw;
+    line-height: 1;
+}
+
+.fs-h-40 {
+    font-size: 4.2vh;
+    line-height: 1;
+}
+
+//Font 24
+.fs-w-24 {
+    font-size: 1.35vw;
+    line-height: 1;
+}
+
+.fs-h-24 {
+    font-size: 2.7vh;
+    line-height: 1;
+}
+
+//Font 32
+.fs-w-32 {
+    font-size: 1.8vw;
+    line-height: 1;
+}
+
+.fs-h-32 {
+    font-size: 2.56vh;
+    line-height: 1;
+}
+
+//Font 20
+.fs-w-20 {
+    font-size: 1.1vw;
+    line-height: 1;
+}
+
+.fs-h-20 {
+    font-size: 2.3vh;
+    line-height: 1;
+}
+
+.fc-w {
+    color: white;
+}
+
+.fc-o {
+    color: $orange !important;
+}
+
+.fc-g {
+    color: $gray-d !important;
+}
+
+//Padding
+
+.p-w1 {
+    padding: 1vw;
+}
+
+.p-h1 {
+    padding: 2vh;
+}
+
+.p-w2 {
+    padding: 2vw;
+}
+
+.p-h2 {
+    padding: 3.5vh;
+}
+
+.pt-w2 {
+    padding-top: 2vw;
+}
+
+.pt-h2 {
+    padding-top: 3.5vh;
+}
+
+.ft-p-w {
+    padding: 4vw 0 1vw;
+}
+
+.ft-p-h {
+    padding: 6vh 0 2vh;
+}
+
+//set section padding
+.pv-w3 {
+    padding: 3vw 0;
+}
+
+.pv-w5 {
+    padding: 5vw 0;
+}
+
+.pv-h5 {
+    padding: 6vh 0;
+}
+
+.pv-w1 {
+    padding: 1vw 0;
+}
+
+.pv-h1 {
+    padding: 2vh 0;
+}
+
+.pv-w2 {
+    padding: 2vw 0;
+}
+
+.pv-h2 {
+    padding: 3.5vh 0;
+}
+
+//horizontal paddings
+.ph-w1 {
+    padding: 0 1vw;
+}
+
+.ph-h1 {
+    padding: 0 2vh;
+}
+
+.ph-w2 {
+    padding: 0 2vw;
+}
+
+.ph-h2 {
+    padding: 0 3.5vh;
+}
+
+.p-w-1 {
+    padding: 0.5vw 1.8vw;
+}
+
+.p-h-1 {
+    padding: 0.5vh 1.8vh;
+}
+
+.mv-w {
+    margin-top: 1.6vw;
+    margin-bottom: 1.6vw;
+}
+
+.mv-h {
+    margin-top: 3.2vh;
+    margin-bottom: 3.2vh;
+}
+
+.m-r {
+    margin-right: 1vw;
+}
+
+.m-b {
+    margin-bottom: 1vh;
+}
+
+.btn-main {
+    color: $white;
+    transition: 0.3s;
+    border: 1px solid $orange;
+    border-radius: 0;
+}
+
+.btn-main:hover {
+    color: $white;
+    background-color: $orange;
+    border: 1px solid $orange;
+    border-radius: 1vw;
+}
+
+.btn-main-b {
+    color: $gray-d;
+    transition: 0.3s;
+    border: 1px solid $orange;
+    border-radius: 0;
+}
+
+.btn-main-b:hover {
+    color: $white;
+    background-color: $orange;
+    border: 1px solid $orange;
+    border-radius: 1vw;
+}
+
+.down-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    z-index: 100;
+}
+
+.fl {
+    font-weight: 100 !important;
+}
+
+//Plan
+.single-plan {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 12%;
+    transition: .3s ease;
+    align-content: center;
+    z-index: 50;
+}
+
+.overlay-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: transparent;
+    opacity: 100%;
+    width: 100%;
+    height: 10%;
+    transition: .3s ease;
+    align-content: center;
+    z-index: 20;
+}
+
+.price {
+    opacity: 100%;
+    transition: .3s ease;
+}
+
+.desc {
+    visibility: hidden;
+}
+
+.single-plan:hover .overlay {
+    height: 100%;
+}
+
+.single-plan:hover .overlay-2 {
+    height: 100%;
+    background-color: #000000;
+    opacity: 70%;
+}
+
+.single-plan:hover .price {
+    opacity: 0%;
+}
+
+.single-plan:hover .desc {
+    visibility: visible;
+}
+
+
+.plan-img {
+    display: block;
+    width: 100%;
+}
+
+.plan-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+//Experience
+.single-expe {
+    position: relative;
+}
+
+// .single-expe:hover {
+//     box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.1);
+// }
+
+.grid-icon-w {
+    margin: 0 auto 1vw;
+}
+
+.grid-icon-h {
+    margin: 0 auto 2vh;
+}
+
+//Projects
+.single-proj {
+    position: relative;
+}
+
+.next {
+    transition: .3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    overflow: hidden;
+    z-index: 50;
+}
+
+.proj-overlay {
+    background-color: $orange;
+    transition: .3s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+.single-proj:hover .next {
+    opacity: 1;
+}
+
+.single-proj:hover .proj-overlay {
+    opacity: 0.7;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+//Life Cycle
+.lc-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    place-content: center;
+}
+
+.lc-component {
+    --_w: 40vw;
+    --_r: calc((var(--_w) - var(--_sz)) / 2);
+    --_id: calc(var(--_w) - (var(--_sz) * 3));
+    --_sz: 6vw;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    container-type: inline;
+    display: grid;
+    height: var(--_w);
+    place-content: center;
+    position: relative;
+    block-size: var(--_w);
+    inline-size: var(--_w);
+    margin-bottom: 10vw;
+}
+
+@media screen and (max-width: 640px){
+    .lc-component {
+        --_w: 80vw;
+        --_r: calc((var(--_w) - var(--_sz)) / 2);
+        --_sz: 12vw;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        container-type: inline;
+        display: grid;
+        height: var(--_w);
+        place-content: center;
+        position: relative;
+        block-size: var(--_w);
+        inline-size: var(--_w);
+        margin-bottom: 20vw;
+    }
+}
+
+.lc-component .lc-element:nth-child(1) {
+    --_d: 157deg;
+}
+
+.lc-component .lc-element:nth-child(2) {
+    --_d: 200deg;
+}
+
+.lc-component .lc-element:nth-child(3) {
+    --_d: 270deg;
+}
+
+.lc-component .lc-element:nth-child(4) {
+    --_d: 340deg;
+}
+
+.lc-component .lc-element:nth-child(5) {
+    --_d: 22deg;
+}
+
+.lc-component .lc-element {
+    --_x: calc(var(--_r) + (var(--_r) * cos(var(--_d))));
+    --_y: calc(var(--_r) + (var(--_r) * sin(var(--_d))));
+    display: grid;
+    height: var(--_sz);
+    left: var(--_x);
+    place-content: center;
+    position: absolute;
+    top: var(--_y);
+    width: var(--_sz);
+}
+
+.lc-component .lc-element:nth-child(3) {
+    --_x: calc(var(--_r) + (var(--_r) * cos(var(--_d))));
+    --_y: 0;
+    display: grid;
+    height: var(--_sz);
+    left: var(--_x);
+    place-content: center;
+    position: absolute;
+    top: var(--_y);
+    width: var(--_sz);
+}
+
+.lc-icon {
+    width: var(--_sz);
+    height: var(--_sz);
+}
+
+.lc-icon-sel {
+    width: calc(var(--_sz) * 1.7);
+    height: calc(var(--_sz) * 1.7);
+    transition: .1s ease;
+}
+
+.lc-title {
+    visibility: hidden;
+}
+
+.lc-title-sel {
+    visibility: visible;
+    transition-delay: 0.1s;
+}
+
+.lc-circle {
+    background-color: $orange-l;
+    border-radius: 50%;
+}
+
+.lc-center {
+    width: var(--_id);
+    height: var(--_id);
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bottom-div {
+    position: absolute;
+    z-index: 50;
+    top: calc(var(--_w) - (var(--_sz) / 1.7));
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+}
+
+//Contact
+.bhk-form-w,
+.bhk-form-h {
+    border: none;
+    border-bottom: 2px solid $orange;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+}
+
+.bhk-form-w::placeholder {
+    font-size: 1.1vw !important;
+    line-height: 1;
+    color: $gray-d;
+}
+
+.bhk-form-h::placeholder {
+    font-size: 2.3vh !important;
+    line-height: 1;
+    color: $gray-d;
+}
+
+//Testimonial
+.icon-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.test-icon {
+    justify-self: center;
+}
+
+.title-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.test-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-quote-2 {
+    visibility: hidden;
+}
+
+.left-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.test-slider {
+  padding-bottom: 50px;
+  .test-pagination.swiper-pagination.swiper-pagination-bullets {
+    .swiper-pagination-bullet {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: $orange;
+      position: relative;
+      margin-right: 10px;
+      &::before {
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        top: -7px;
+        bottom: 0;
+        right: 0;
+        left: -7px;
+        border: 1px solid $orange;
+        border-radius: 50%;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        transform: scale(0.5);
+      }
+    }
+  }
+  .test-pagination.swiper-pagination.swiper-pagination-bullets
+    .swiper-pagination-bullet-active {
+    background-color: $orange;
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+//Footer
+.footer-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    list-style-type: none;
+    height: 100%;
+}
+
+.footer-li {
+    text-align: end;
+    line-height: 1.2 !important;
+}
+
+.hr {
+    color: $orange;
+    height: 1px;
+}
+
+.footer-a {
+    line-height: 1.2 !important;
+}

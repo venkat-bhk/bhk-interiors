@@ -125,111 +125,6 @@ const WhyData = [
   }
 ]
 
-const ProjectData = [
-  { 
-    thumbnail: "/bhk-home/projects/Aparna/thumbnail.jpg",
-    cover: "/bhk-home/projects/Cover.jpg",
-    title: "Aparna",
-    location: "Gachibowli",
-    plan: "Luxuria",
-    type: "3 BHK",
-    heading_1: "Lorem ipsum dolor sit amet, consetetur",
-    desc_1: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et",
-    heading_2: "Lorem ipsum dolor sit amet, consetetur",
-    desc_2: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,",
-    team: [
-      {
-        name: "Roshan Agarwal",
-        desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-        img: "/bhk-home/projects/team.jpg"
-      },
-      {
-        name: "Roshan Agarwal",
-        desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-        img: "/bhk-home/projects/team.jpg"
-      },
-      {
-        name: "Roshan Agarwal",
-        desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-        img: "/bhk-home/projects/team.jpg"
-      },
-      {
-        name: "Roshan Agarwal",
-        desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-        img: "/bhk-home/projects/team.jpg"
-      }
-    ]
-  },
-  { 
-    thumbnail: "/bhk-home/projects/Aparna 2/thumbnail.jpg",
-    cover: "/bhk-home/projects/Cover.jpg",
-    title: "Aparna 2",
-    location: "Gachibowli",
-    plan: "Luxuria",
-    type: "3 BHK",
-    heading_1: "Lorem ipsum dolor sit amet, consetetur",
-    desc_1: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et",
-    heading_2: "Lorem ipsum dolor sit amet, consetetur",
-    desc_2: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,",
-    team: [
-      {
-        name: "Roshan Agarwal",
-        desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-        img: "/bhk-home/projects/team.jpg"
-      },
-      {
-        name: "Roshan Agarwal",
-        desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-        img: "/bhk-home/projects/team.jpg"
-      },
-      {
-        name: "Roshan Agarwal",
-        desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-        img: "/bhk-home/projects/team.jpg"
-      },
-      {
-        name: "Roshan Agarwal",
-        desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-        img: "/bhk-home/projects/team.jpg"
-      }
-    ]
-  },
-  { 
-    thumbnail: "/bhk-home/projects/Aparna 3/thumbnail.jpg",
-    cover: "/bhk-home/projects/Cover.jpg",
-    title: "Aparna 3",
-    location: "Gachibowli",
-    plan: "Luxuria",
-    type: "3 BHK",
-    heading_1: "Lorem ipsum dolor sit amet, consetetur",
-    desc_1: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et",
-    heading_2: "Lorem ipsum dolor sit amet, consetetur",
-    desc_2: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,",
-    team: [
-      {
-        name: "Roshan Agarwal",
-        desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-        img: "/bhk-home/projects/team.jpg"
-      },
-      {
-        name: "Roshan Agarwal",
-        desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-        img: "/bhk-home/projects/team.jpg"
-      },
-      {
-        name: "Roshan Agarwal",
-        desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-        img: "/bhk-home/projects/team.jpg"
-      },
-      {
-        name: "Roshan Agarwal",
-        desc: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam",
-        img: "/bhk-home/projects/team.jpg"
-      }
-    ]
-  }
-]
-
 const LCData = [
   {
     title: "Design Discussion & Quotation",
@@ -273,7 +168,6 @@ export {
   ExpeData,
   DreamData,
   WhyData,
-  ProjectData,
   LCData,
   TestimonialsData
 };

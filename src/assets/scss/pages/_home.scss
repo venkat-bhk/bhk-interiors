@@ -224,6 +224,15 @@ $orange-l: #FFDBCE !default;
     padding: 0.5vh 1.8vh;
 }
 
+//padding bottom
+.pb-w1 {
+    padding-bottom: 1vw;
+}
+
+.pb-h1 {
+    padding-bottom: 1vh;
+}
+
 .mv-w {
     margin-top: 1.6vw;
     margin-bottom: 1.6vw;
@@ -442,7 +451,7 @@ $orange-l: #FFDBCE !default;
     margin-bottom: 10vw;
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
     .lc-component {
         --_w: 80vw;
         --_r: calc((var(--_w) - var(--_sz)) / 2);
@@ -610,39 +619,42 @@ $orange-l: #FFDBCE !default;
 }
 
 .test-slider {
-  padding-bottom: 50px;
-  .test-pagination.swiper-pagination.swiper-pagination-bullets {
-    .swiper-pagination-bullet {
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: $orange;
-      position: relative;
-      margin-right: 10px;
-      &::before {
-        content: '';
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        top: -7px;
-        bottom: 0;
-        right: 0;
-        left: -7px;
-        border: 1px solid $orange;
-        border-radius: 50%;
-        opacity: 0;
-        transition: all 0.3s ease-in-out;
-        transform: scale(0.5);
-      }
+    padding-bottom: 50px;
+
+    .test-pagination.swiper-pagination.swiper-pagination-bullets {
+        .swiper-pagination-bullet {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: $orange;
+            position: relative;
+            margin-right: 10px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                height: 20px;
+                width: 20px;
+                top: -7px;
+                bottom: 0;
+                right: 0;
+                left: -7px;
+                border: 1px solid $orange;
+                border-radius: 50%;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+                transform: scale(0.5);
+            }
+        }
     }
-  }
-  .test-pagination.swiper-pagination.swiper-pagination-bullets
-    .swiper-pagination-bullet-active {
-    background-color: $orange;
-    &::before {
-      opacity: 1;
+
+    .test-pagination.swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet-active {
+        background-color: $orange;
+
+        &::before {
+            opacity: 1;
+        }
     }
-  }
 }
 
 //Footer
@@ -666,4 +678,28 @@ $orange-l: #FFDBCE !default;
 
 .footer-a {
     line-height: 1.2 !important;
+}
+
+//Projects
+.proj-slider {
+    caret-color: transparent;
+
+    .proj-pagination.swiper-pagination.swiper-pagination-bullets {
+        .swiper-pagination-bullet {
+            width: 4vw;
+            height: 0.07vw;
+            background: #707070;
+            position: relative;
+            margin-right: 10px;
+            border-radius: 0;
+            opacity: 0.7;
+        }
+    }
+
+    .proj-pagination.swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet-active {
+        width: 4vw;
+        height: 0.35vw;
+        background-color: #707070;
+        opacity: 1;
+    }
 }

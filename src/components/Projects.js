@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import useWindowSize from "./Window";
-import { ProjectData } from "@utils/data";
+import ProjectData from "@utils/projectData";
 
 const Projects = () => {
 
@@ -20,9 +20,12 @@ const Projects = () => {
 
           <div className={`row justify-content-center ${width > height ? "mv-w" : "mv-h"}`}>
             {
-              ProjectData.map((x, i) => (
+              ProjectData.filter((x, i) => i < 3).map((x, i) => (
                 <div key={i} className="col-lg-4 col-md-6">
-                  <Link legacyBehavior href="">
+                  <Link legacyBehavior href={{
+                    pathname: '/projects/[slug]',
+                    query: { slug: x.slug },
+                  }}>
                     <div className="single-proj pointer mt-3">
                       <img src={x.thumbnail} alt={x.title} className="plan-img" />
                       <div className="next">

@@ -8,7 +8,7 @@ const Navbar = ({ navDark, insurance, classOption }) => {
   const [scroll, setScroll] = useState(0);
   const [headerTop, setHeaderTop] = useState(0);
   const {width, height} = useWindowSize();
-  console.log(width)
+
   const handleScroll = () => {
     setScroll(window.scrollY);
   };

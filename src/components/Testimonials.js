@@ -20,6 +20,7 @@ export default function Testimonials() {
       delay: 2000,
     },
   };
+  
   return (
     <section className={`${width > height ? "pv-w5" : "pv-h5"} caret-hide`}>
       <div className="container">
@@ -39,7 +40,7 @@ export default function Testimonials() {
             >
               {
                 TestimonialsData.map((x, index) => (
-                  <SwiperSlide>
+                  <SwiperSlide key={index+1}>
                     {' '}
                     <div className="text-center">
                       <div className='icon-div'>
@@ -51,7 +52,7 @@ export default function Testimonials() {
                         </div>
                         <div className='test-icon'>
                           <img
-                            src="bhk-home/projects/team.jpg"
+                            src="/projects/team.jpg"
                             width={width > height ? width / 10 : height / 8}
                             alt="avatar"
                             className=""

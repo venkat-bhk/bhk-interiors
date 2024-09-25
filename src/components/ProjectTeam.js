@@ -4,12 +4,12 @@ import useWindowSize from "./Window";
 import { useRouter } from "next/router";
 import ProjectData from "@utils/projectData";
 
-const ProjectTeam = () => {
+const ProjectTeam = (props) => {
 
   const { width, height } = useWindowSize();
 
-  const router = useRouter()
-  const project = ProjectData.filter(x => x.slug === router.query.p_name)
+  console.log(props);
+  
 
   return (
     <section className={`${width > height ? "pv-w5" : "pv-h5"} caret-hide gray`}>
@@ -20,7 +20,7 @@ const ProjectTeam = () => {
           </div>
         </div>
         <div className={`row justify-content-center ${width > height ? "mv-w" : "mv-h"}`}>
-          {project[0]?.team.map((x, i) => (
+          {props?.project?.team.map((x, i) => (
             <div className="col-lg-3 col-md-6 col-xs-6" key={i + 1}>
               <div className={`single-expe text-center ${width > height ? "pv-w1" : "pv-h1"}`}>
                 <div className={`${width > height ? "grid-icon-w" : "grid-icon-h"}`}>

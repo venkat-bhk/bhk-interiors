@@ -8,12 +8,9 @@ import useWindowSize from "./Window";
 import { useRouter } from "next/router";
 import ProjectData from "@utils/projectData";
 
-const ProjectCarousel = () => {
+const ProjectCarousel = (props) => {
 
   const { width, height } = useWindowSize();
-
-  const router = useRouter()
-  const project = ProjectData.filter(x => x.slug === router.query.p_name)
 
   const swiperOption = {
     slidesPerView: 1,
@@ -39,7 +36,7 @@ const ProjectCarousel = () => {
               modules={[Pagination]}
             >
               {
-                project[0]?.carousel.map((x, index) => (
+                props?.project?.carousel.map((x, index) => (
                   <SwiperSlide key={index + 1}>
                     {' '}
                     <div>
@@ -55,8 +52,8 @@ const ProjectCarousel = () => {
         <div className={`row justify-content-center ${width > height ? "ph-w2" : "ph-h2"}`}>
           <div className="col-lg-8 col-md-10 text-center">
             <div className={`${width > height ? "pv-w5" : "pv-h5"}`}>
-              <h2 className={`fl fc-o ${width > height ? "fs-w-60" : "fs-h-60"}`}>{project[0]?.heading_2}</h2>
-              <p className={`fl fc-g ${width > height ? "fs-w-20 pv-w1" : "fs-h-20 pv-h1"}`}>{project[0]?.desc_2}</p>
+              <h2 className={`fl fc-o ${width > height ? "fs-w-60" : "fs-h-60"}`}>{props?.project?.heading_2}</h2>
+              <p className={`fl fc-g ${width > height ? "fs-w-20 pv-w1" : "fs-h-20 pv-h1"}`}>{props?.project?.desc_2}</p>
             </div>
           </div>
         </div>

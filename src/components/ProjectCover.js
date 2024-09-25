@@ -15,7 +15,7 @@ const ProjectCover = (props) => {
       className=""
     >
       <div>
-        <img src={props?.project.cover} alt="Cover Image" className="plan-img" />
+        <img src={props?.project?.cover} alt="Cover Image" className="plan-img" />
       </div>
     </section>
   );

@@ -17,11 +17,16 @@ export default function Project() {
   return (
     <Layout>
       <Navbar />
-      <ProjectCover project = {project[0] && project[0]} />
-      <ProjectDesc project = {project[0] && project[0]} />
-      <ProjectCarousel project = {project[0] && project[0]} />
-      <ProjectTeam project = {project[0] && project[0]} />
-      <Testimonials />
+      {
+        project[0] &&
+        <div>
+          <ProjectCover project={project[0] && project[0]} />
+          <ProjectDesc project={project[0] && project[0]} />
+          <ProjectCarousel project={project[0] && project[0]} />
+          <ProjectTeam project={project[0] && project[0]} />
+          <Testimonials />
+        </div>
+      }
       <Footer />
     </Layout>
   );

@@ -5,7 +5,7 @@ import useWindowSize from "./Window";
 import { useRouter } from "next/router";
 import ProjectData from "@utils/projectData";
 
-const ProjectCover = (props) => {
+const ProjectCover = ({project}) => {
 
   const videoElement = useRef()
   const { width, height } = useWindowSize();
@@ -14,9 +14,12 @@ const ProjectCover = (props) => {
     <section
       className=""
     >
-      <div>
-        <img src={props?.project?.cover} alt="Cover Image" className="plan-img" />
-      </div>
+      {
+        project &&
+        <div>
+          <img src={project.cover} alt="Cover Image" className="plan-img" />
+        </div>
+      }
     </section>
   );
 };

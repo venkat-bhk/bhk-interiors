@@ -8,7 +8,7 @@ import useWindowSize from "./Window";
 import { useRouter } from "next/router";
 import ProjectData from "@utils/projectData";
 
-const ProjectCarousel = (props) => {
+const ProjectCarousel = ({ project }) => {
 
   const { width, height } = useWindowSize();
 
@@ -27,37 +27,40 @@ const ProjectCarousel = (props) => {
 
   return (
     <section className={`caret-hide white`}>
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-lg-12">
-            <Swiper
-              className="proj-slider pb-5"
-              {...swiperOption}
-              modules={[Pagination]}
-            >
-              {
-                props?.project?.carousel.map((x, index) => (
-                  <SwiperSlide key={index + 1}>
-                    {' '}
-                    <div>
-                      <img src={x.img} alt="Cover Image" className="plan-img" />
-                    </div>
-                  </SwiperSlide>
-                ))
-              }
-              <div className="proj-pagination swiper-pagination"></div>
-            </Swiper>
+      {
+        project &&
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-12">
+              <Swiper
+                className="proj-slider pb-5"
+                {...swiperOption}
+                modules={[Pagination]}
+              >
+                {
+                  project.carousel.map((x, index) => (
+                    <SwiperSlide key={index + 1}>
+                      {' '}
+                      <div>
+                        <img src={x.img} alt="Cover Image" className="plan-img" />
+                      </div>
+                    </SwiperSlide>
+                  ))
+                }
+                <div className="proj-pagination swiper-pagination"></div>
+              </Swiper>
+            </div>
           </div>
-        </div>
-        <div className={`row justify-content-center ${width > height ? "ph-w2" : "ph-h2"}`}>
-          <div className="col-lg-8 col-md-10 text-center">
-            <div className={`${width > height ? "pv-w5" : "pv-h5"}`}>
-              <h2 className={`fl fc-o ${width > height ? "fs-w-60" : "fs-h-60"}`}>{props?.project?.heading_2}</h2>
-              <p className={`fl fc-g ${width > height ? "fs-w-20 pv-w1" : "fs-h-20 pv-h1"}`}>{props?.project?.desc_2}</p>
+          <div className={`row justify-content-center ${width > height ? "ph-w2" : "ph-h2"}`}>
+            <div className="col-lg-8 col-md-10 text-center">
+              <div className={`${width > height ? "pv-w5" : "pv-h5"}`}>
+                <h2 className={`fl fc-o ${width > height ? "fs-w-60" : "fs-h-60"}`}>{project.heading_2}</h2>
+                <p className={`fl fc-g ${width > height ? "fs-w-20 pv-w1" : "fs-h-20 pv-h1"}`}>{project.desc_2}</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      }
     </section >
   );
 };

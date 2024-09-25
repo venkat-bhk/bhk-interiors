@@ -7,7 +7,7 @@ const ProjectData = [
       location: "Gachibowli",
       plan: "Luxuria",
       type: "3 BHK",
-      heading_1: "Lorem ipsum dolor sit amet, consetetur",
+      heading_1: "Lorem ipsum dolor sit etma, consetetur",
       desc_1: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et",
       heading_2: "Lorem ipsum dolor sit amet, consetetur",
       desc_2: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,",

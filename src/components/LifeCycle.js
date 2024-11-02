@@ -42,7 +42,7 @@ const LifeCycle = () => {
     if (isVisible) {
       setTimeout(() => {
         startAnimate();
-      }, 2000);
+      }, 1000);
     } else {
       setAnimate(false)
     }

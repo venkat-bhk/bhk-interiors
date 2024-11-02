@@ -58,14 +58,18 @@ $orange-l: #FFDBCE !default;
     justify-content: flex-end;
 }
 
+.caret-hide {
+    caret-color: transparent !important;
+}
+
 //Font 80
 .fs-w-80 {
-    font-size: 4.5vw;
+    font-size: 4vw;
     line-height: 1;
 }
 
 .fs-h-80 {
-    font-size: 8vh;
+    font-size: 6vh;
     line-height: 1;
 }
 
@@ -289,6 +293,10 @@ $orange-l: #FFDBCE !default;
 
 .fl {
     font-weight: 100 !important;
+}
+
+.lh-2 {
+    line-height: 1.2 !important;
 }
 
 //Plan
@@ -521,16 +529,17 @@ $orange-l: #FFDBCE !default;
 .lc-icon-sel {
     width: calc(var(--_sz) * 1.7);
     height: calc(var(--_sz) * 1.7);
-    transition: .1s ease;
+    transition: .5s ease;
 }
 
 .lc-title {
-    visibility: hidden;
+    opacity: 0;
 }
 
 .lc-title-sel {
-    visibility: visible;
-    transition-delay: 0.1s;
+    opacity: 100;
+    transition: 0.2s;
+    transition-delay: 0.3s;
 }
 
 .lc-circle {

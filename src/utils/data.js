@@ -135,15 +135,15 @@ const LCData = [
     img: "/bhk-home/lifecycle/2.svg"
   },
   {
-    title: "",
+    title: "Production",
     img: "/bhk-home/lifecycle/3.svg"
   },
   {
-    title: "",
+    title: "Execution",
     img: "/bhk-home/lifecycle/4.svg"
   },
   {
-    title: "",
+    title: "Handover",
     img: "/bhk-home/lifecycle/5.svg"
   }
 ]

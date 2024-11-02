@@ -26,7 +26,7 @@ const Intro = () => {
                     <a className={`caret-hide btn-main ${width > height ? "p-w-1 fs-w-20" : "p-h-1 fs-h-20 m-b"}`}>Free&nbsp;design&nbsp;consultation</a>
                   </Link>
                 </div>
-                <div className={`${width >= height ? "col-6 jus-start" : "col-12"}`}>
+                <div className={`${width >= height ? "col-6 jus-start" : "col-12 mt-3"}`}>
                   <Link legacyBehavior href="">
                     <a className={`caret-hide btn-main ${width > height ? "p-w-1 fs-w-20" : "p-h-1 fs-h-20"}`}>Visit&nbsp;experience&nbsp;centre</a>
                   </Link>

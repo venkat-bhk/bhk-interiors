@@ -17,7 +17,7 @@ const DreamJob = () => {
             <p className={`fl fc-g ${width > height ? "fs-w-20 pv-w1" : "fs-h-20 pv-h1"}`}>With a keen eye for detail and a passion for design, we transform houses into homes that reflect your unique style.
               Backed by our dedicated team of interior designers and professional craftsmen, we are committed to bring your vision to life.
               From concept to completion, we handle every aspect of your home interiors with precision and care.</p>
-            <h3 className={`fl fc-g ${width > height ? "fs-w-40" : "fs-h-40"}`}>Crafting inspiring interiors</h3>
+            <h3 className={`fl fc-g ${width > height ? "fs-w-40" : "fs-h-40"}`}>Crafting inspiringinteriors</h3>
           </div>
         </div>
         <div className={`row justify-content-center ${width > height ? "mv-w" : "mv-h"}`}>
@@ -37,7 +37,7 @@ const DreamJob = () => {
         </div>
         <div className={`d-flex justify-content-center ${width > height ? "p-w1" : "p-h1"}`}>
           <Link legacyBehavior href="">
-            <a className={`btn-main-b fl ${width > height ? "p-w-1 fs-w-20" : "p-h-1 fs-h-20"}`}>Know more</a>
+            <a className={`btn-main-b fl ${width > height ? "p-w-1 fs-w-20" : "p-h-1 fs-h-20"}`}>Know&nbsp;more</a>
           </Link>
         </div>
       </div>

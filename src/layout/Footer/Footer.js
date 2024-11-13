@@ -50,21 +50,21 @@ const FooterTwo = () => {
               href=""
               className="footer-a fc-w"
             >
-              &nbsp;Privacy&nbsp;Policy&nbsp;
+              &ensp;Privacy&nbsp;Policy&ensp;
             </a>
             |
             <a
               href=""
               className="footer-a fc-w"
             >
-              &nbsp;Terms&nbsp;&&nbsp;Conditions&nbsp;
+              &ensp;Terms&nbsp;&&nbsp;Conditions&ensp;
             </a>
             |
             <a
               href=""
               className="footer-a fc-w"
             >
-              &nbsp;Contact&nbsp;Us
+              &ensp;Contact&nbsp;Us&ensp;
             </a>
           </p>
         </div>
